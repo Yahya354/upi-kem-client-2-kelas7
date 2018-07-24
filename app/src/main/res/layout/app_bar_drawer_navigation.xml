@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:padding="10dp"
+        android:background="@color/background"
         app:elevation="0dp">
 
         <android.support.v7.widget.Toolbar
@@ -30,7 +31,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textStyle="bold"
-                android:textColor="@color/hitam"
+                android:textColor="@color/biru3"
                 android:textSize="24sp"
                 android:layout_marginEnd="60dp"/>
 

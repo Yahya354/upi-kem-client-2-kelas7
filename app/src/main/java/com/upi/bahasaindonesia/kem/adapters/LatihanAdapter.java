@@ -36,9 +36,7 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
         this.context = context;
     }
 
-    private String[] warna = {"#FDBD57", "#E4716E", "#666666", "#18748A", "#18A076"};
-
-    private int[] gambar1 = {R.drawable.a, R.drawable.b, R.drawable.c, R.drawable.d, R.drawable.e, R.drawable.f, R.drawable.g, R.drawable.h, R.drawable.i, R.drawable.j};
+    private String[] warna = {"#1D4999", "#1D4999", "#1D4999", "#1D4999", "#1D4999"};
 
     @NonNull
     @Override
@@ -54,7 +52,7 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
             @Override
             public void onClick(View v) {
                 new AlertDialog.Builder(context)
-                        .setMessage("Apakah kamu sudah siap membaca?")
+                        .setMessage("Apakah kamu sudah siap?")
                         .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -99,9 +97,6 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
         gradientDrawable.setColor(Color.parseColor(warna[position % warna.length]));
         gradientDrawable.setCornerRadius(15);
         holder.wadah.setBackground(gradientDrawable);
-
-        // "% gambar1.length" adalah sebagai pengaman saja
-        holder.gambar.setImageResource(gambar1[position % gambar1.length]);
     }
 
     @Override
@@ -124,7 +119,6 @@ public class LatihanAdapter extends RecyclerView.Adapter<LatihanAdapter.ViewHold
             jumlahKata = itemView.findViewById(R.id.buku_teks_jumlah_kata);
             wadah = itemView.findViewById(R.id.teks_buku_wadah);
             gembok = itemView.findViewById(R.id.buku_teks_gembok);
-            gambar = itemView.findViewById(R.id.buku_teks_gambar);
         }
     }
 

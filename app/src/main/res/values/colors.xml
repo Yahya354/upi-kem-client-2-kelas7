@@ -4,6 +4,8 @@
     <color name="colorPrimaryDark">#cccccc</color>
     <color name="colorAccent">#000000</color>
 
+    <color name="background">#F8B323</color>
+    <color name="biru3">#1D4999</color>
     <color name="putih">#ffffff</color>
     <color name="biru">#1B849C</color>
     <color name="biru2">#177287</color>

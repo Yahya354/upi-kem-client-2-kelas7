@@ -14,7 +14,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
-        android:background="@drawable/tombol_latihan">
+        android:background="@drawable/tombol">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -23,14 +23,6 @@
             android:orientation="horizontal"
             android:padding="15dp"
             android:gravity="center">
-
-            <ImageView
-                android:id="@+id/buku_teks_gambar"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:src="@drawable/logo_aplikasi"
-                android:contentDescription=""
-                android:layout_marginEnd="15dp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

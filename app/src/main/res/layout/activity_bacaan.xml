@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BacaanActivity"
-    android:background="@color/putih">
+    android:background="@color/background">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:gravity="end"
             android:textStyle="bold"
             android:textSize="20sp"
-            android:textColor="@color/biru"
+            android:textColor="@color/putih"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"/>
 
@@ -46,7 +46,7 @@
                         android:textSize="30sp"
                         android:gravity="center"
                         android:textStyle="bold"
-                        android:textColor="@color/biru"
+                        android:textColor="@color/putih"
                         android:layout_marginBottom="20dp"/>
 
                     <TextView
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="20sp"
                         android:lineSpacingExtra="7dp"
-                        android:textColor="#000000"/>
+                        android:textColor="@color/putih"/>
 
                 </LinearLayout>
 
@@ -67,7 +67,7 @@
                 android:layout_height="50dp"
                 android:text="@string/selesai_membaca"
                 android:textSize="20sp"
-                android:background="@drawable/tombol_informasi"
+                android:background="@drawable/tombol_utama"
                 android:textStyle="bold"
                 android:textColor="@color/putih"
                 android:layout_gravity="bottom"
