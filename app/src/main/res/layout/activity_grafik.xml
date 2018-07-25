@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".GrafikActivity"
-    android:background="@color/putih">
+    android:background="@color/background">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                     android:id="@+id/tombol_keluar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ikon_keluar_hitam"
+                    android:src="@drawable/ikon_keluar_putih"
                     android:background="@color/transparan"
                     android:contentDescription="@string/menu" />
 
@@ -45,7 +45,7 @@
                     android:textAlignment="center"
                     android:textAllCaps="true"
                     android:textStyle="bold"
-                    android:textColor="@color/hitam"
+                    android:textColor="@color/putih"
                     android:textSize="24sp"
                     android:layout_marginEnd="30dp"/>
 
@@ -74,7 +74,7 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:layout_marginTop="70dp"
-        android:background="@color/putih">
+        android:background="@color/background">
 
         <ProgressBar
             android:layout_width="wrap_content"

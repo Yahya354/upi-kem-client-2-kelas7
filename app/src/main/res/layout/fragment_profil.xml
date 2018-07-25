@@ -22,7 +22,7 @@
                 android:gravity="center"
                 android:paddingTop="60dp"
                 android:paddingBottom="20dp"
-                android:background="#177287">
+                android:background="@color/background">
 
                 <ImageView
                     android:layout_width="120dp"

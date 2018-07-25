@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HasilKuisActivity"
-    android:background="@color/biru"
+    android:background="@color/background"
     android:padding="10dp">
 
     <LinearLayout
@@ -25,7 +25,7 @@
                 android:layout_weight="6"
                 android:text="Waktu membaca"
                 android:textStyle="bold"
-                android:textColor="#ffffff"
+                android:textColor="@color/biru3"
                 android:textSize="20sp" />
 
                 <TextView
@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
                     android:text=": 200 detik"
-                    android:textColor="#ffffff"
+                    android:textColor="@color/biru3"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -49,7 +49,7 @@
                 android:layout_weight="6"
                 android:text="Jawaban yang benar"
                 android:textStyle="bold"
-                android:textColor="#ffffff"
+                android:textColor="@color/biru3"
                 android:textSize="20sp" />
 
             <TextView
@@ -58,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
                 android:text=": 4"
-                android:textColor="#ffffff"
+                android:textColor="@color/biru3"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -77,8 +77,16 @@
             android:gravity="center"
             android:text="Skor:"
             android:textStyle="bold"
-            android:textColor="#ffffff"
+            android:textColor="@color/biru3"
             android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/biru3"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/skor_kpm"
@@ -91,16 +99,18 @@
                 android:textColor="#ffffff"
                 android:textSize="30sp" />
 
-        <RatingBar
-            android:id="@+id/ratingBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:isIndicator="true"
-            android:numStars="5"
-            android:rating="4"
-            android:stepSize="1"
-            android:theme="@style/RatingBar" />
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="4"
+                android:stepSize="1"
+                android:theme="@style/RatingBar" />
+
+        </LinearLayout>
 
             <TextView
                 android:id="@+id/pesan"
@@ -110,7 +120,7 @@
                 android:gravity="center"
                 android:text="Wow, hebat sekali!"
                 android:textStyle="bold"
-                android:textColor="#ffffff"
+                android:textColor="@color/biru3"
                 android:layout_margin="10dp"
                 android:textSize="30sp" />
 
@@ -129,7 +139,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/tombol_biru2"
+            android:background="@drawable/tombol_utama"
             android:text="Latihan"
             android:textSize="20sp"
             android:textColor="#ffffff"
@@ -141,7 +151,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:background="@drawable/tombol_biru2"
+            android:background="@drawable/tombol_utama"
             android:text="Beranda"
             android:textSize="20sp"
             android:textColor="#ffffff"
