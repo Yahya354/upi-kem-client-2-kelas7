@@ -13,45 +13,37 @@
         android:background="@color/transparan"
         app:elevation="0dp">
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:layout_scrollFlags="scroll"
-            app:contentInsetStart="0dp">
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/tombol_biru4"
+            android:padding="10dp"
+            android:layout_margin="10dp">
 
-            <LinearLayout
+            <ImageButton
+                android:id="@+id/tombol_keluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ikon_keluar_biru"
+                android:background="@color/transparan"
+                android:contentDescription="@string/menu" />
+
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:gravity="center">
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="0dp"
+                android:text="@string/petunjuk"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textColor="@color/biru3"
+                android:textSize="24sp"
+                android:layout_marginEnd="30dp"/>
 
-                <ImageButton
-                    android:id="@+id/tombol_keluar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ikon_keluar_putih"
-                    android:background="@color/transparan"
-                    android:contentDescription="@string/menu" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:padding="0dp"
-                    android:text="@string/petunjuk"
-                    android:textAlignment="center"
-                    android:textAllCaps="true"
-                    android:textStyle="bold"
-                    android:textColor="@color/putih"
-                    android:textSize="24sp"
-                    android:layout_marginEnd="30dp"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.Toolbar>
+        </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
 
@@ -84,7 +76,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -92,7 +84,7 @@
                         android:layout_height="wrap_content"
                         android:text="Klik menu &quot;latihan&quot; pada beranda"
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -111,7 +103,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -119,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:text="Selanjutnya, pilih teks pertama."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -138,7 +130,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -146,7 +138,7 @@
                         android:layout_height="wrap_content"
                         android:text="Bacalah teks yang dipilih dengan saksama."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -165,7 +157,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -173,7 +165,7 @@
                         android:layout_height="wrap_content"
                         android:text="Klik &quot;selesai&quot; apabila kamu sudah membaca teks dengan tuntas."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -192,7 +184,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -200,7 +192,7 @@
                         android:layout_height="wrap_content"
                         android:text="Kemudian jawablah pertanyaan yang tertera dengan cara mengklik pilihan jawaban yang benar."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -219,7 +211,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -227,7 +219,7 @@
                         android:layout_height="wrap_content"
                         android:text="Setelah selesai, kamu bisa melanjutkan ke teks berikutnya atau kembali ke beranda."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -246,7 +238,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -254,7 +246,7 @@
                         android:layout_height="wrap_content"
                         android:text="Klik menu “grafik” pada beranda apabila kamu ingin melihat perkembangan kemampuan membacamu."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 
@@ -272,7 +264,7 @@
                         android:textSize="20sp"
                         android:textStyle="bold"
                         android:layout_gravity="center"
-                        android:textColor="@color/putih"
+                        android:textColor="@color/biru3"
                         android:layout_margin="20dp"/>
 
                     <TextView
@@ -280,7 +272,7 @@
                         android:layout_height="wrap_content"
                         android:text="Jika kamu sudah selesai membaca semua teks, kamu bisa mengulang latihan dari teks pertama lagi."
                         android:textSize="20sp"
-                        android:textColor="#000000"
+                        android:textColor="@color/putih"
                         android:padding="20dp"
                         android:background="@drawable/boks_masukan"/>
 

@@ -9,13 +9,12 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="25dp"
+        android:padding="20dp"
         tools:ignore="UselessParent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="55dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -24,23 +23,24 @@
                 android:layout_height="120dp"
                 android:gravity="start|center"
                 android:orientation="horizontal"
+                android:padding="30dp"
                 android:background="@drawable/tombol"
                 tools:ignore="UselessParent"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="20dp">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="120dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/ikon_informasi"
-                    android:contentDescription="@string/ikon_informasi" />
+                    android:contentDescription="@string/ikon_informasi"
+                    android:layout_marginEnd="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:text="@string/informasi"
                     android:textColor="@color/putih"
-                    android:textSize="30sp"/>
+                    android:textSize="40sp"/>
 
             </LinearLayout>
 
@@ -48,26 +48,26 @@
                 android:id="@+id/tombol_petunjuk"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginTop="10dp"
                 android:gravity="start|center"
                 android:orientation="horizontal"
+                android:padding="30dp"
                 android:background="@drawable/tombol"
                 tools:ignore="UselessParent"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="20dp">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="120dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/ikon_petunjuk"
-                    android:contentDescription="@string/ikon_petunjuk" />
+                    android:contentDescription="@string/ikon_petunjuk"
+                    android:layout_marginEnd="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:text="@string/petunjuk"
                     android:textColor="@color/putih"
-                    android:textSize="30sp"/>
+                    android:textSize="40sp"/>
 
             </LinearLayout>
 
@@ -75,26 +75,26 @@
                 android:id="@+id/tombol_latihan"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginTop="10dp"
                 android:gravity="start|center"
                 android:orientation="horizontal"
+                android:padding="30dp"
                 android:background="@drawable/tombol"
                 tools:ignore="UselessParent"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="20dp">
 
                 <ImageView
-                    android:layout_width="90dp"
-                    android:layout_height="120dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/ikon_latihan"
-                    android:contentDescription="@string/ikon_petunjuk" />
+                    android:contentDescription="@string/ikon_petunjuk"
+                    android:layout_marginEnd="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:text="@string/latihan"
                     android:textColor="@color/putih"
-                    android:textSize="30sp"/>
+                    android:textSize="40sp"/>
 
             </LinearLayout>
 
@@ -102,25 +102,25 @@
                 android:id="@+id/tombol_grafik"
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginTop="10dp"
                 android:gravity="start|center"
                 android:orientation="horizontal"
+                android:padding="30dp"
                 android:background="@drawable/tombol"
                 tools:ignore="UselessParent">
 
                 <ImageView
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
                     android:src="@drawable/ikon_grafik"
-                    android:contentDescription="@string/ikon_petunjuk" />
+                    android:contentDescription="@string/ikon_petunjuk"
+                    android:layout_marginEnd="20dp"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
                     android:text="@string/grafik"
                     android:textColor="@color/putih"
-                    android:textSize="30sp"/>
+                    android:textSize="40sp"/>
 
             </LinearLayout>
 
