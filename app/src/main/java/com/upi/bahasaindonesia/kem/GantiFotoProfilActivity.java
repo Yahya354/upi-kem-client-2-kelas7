@@ -47,6 +47,16 @@ public class GantiFotoProfilActivity extends AppCompatActivity {
         profil_7 = findViewById(R.id.profil_7);
         profil_8 = findViewById(R.id.profil_8);
 
+        int status = 0, i = 1;
+        while (status == 0 && i < 9){
+            if (BerandaActivity.akun.getFotoProfil().equals("profil_" + Integer.toString(i))){
+                int index = i;
+                tampil_foto.setImageResource(gambar[index-1]);
+                status = 1;
+            }
+            i++;
+        }
+
         profil_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

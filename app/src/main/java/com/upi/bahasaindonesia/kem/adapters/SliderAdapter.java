@@ -56,7 +56,7 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public int getCount(){
-        return slide_heading.length;
+        return slide_descs.length;
     }
 
     @Override

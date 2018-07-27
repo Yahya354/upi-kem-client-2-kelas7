@@ -1,5 +1,6 @@
 package com.upi.bahasaindonesia.kem;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,6 @@ public class SliderActivity extends AppCompatActivity {
     private Button mNextBtn;
     private SliderAdapter sliderAdapter;
     private int mCurrentPage;
-    private int count = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,12 +42,7 @@ public class SliderActivity extends AppCompatActivity {
         mNextBtn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                if (count < 4) {
-                    mSlideViewPager.setCurrentItem(mCurrentPage + 1);
-                } else {
-                    startActivity(new Intent(SliderActivity.this, MasukActivity.class));
-                }
-                count++;
+                mSlideViewPager.setCurrentItem(mCurrentPage + 1);
             }
         });
     }
@@ -58,13 +53,13 @@ public class SliderActivity extends AppCompatActivity {
         for(int i = 0; i<mDots.length; i++){
             mDots[i] = new TextView(this);
             mDots[i].setText(Html.fromHtml("&#8226"));
-            mDots[i].setTextSize(35);
-            mDots[i].setTextColor(getResources().getColor(R.color.colorAccent));
+            mDots[i].setTextSize(50);
+            mDots[i].setTextColor(getResources().getColor(R.color.cardview_dark_background));
             mDotLayout.addView(mDots[i]);
         }
 
         if(mDots.length > 0){
-            mDots[position].setTextColor(getResources().getColor(R.color.colorPrimaryDark));
+            mDots[position].setTextColor(getResources().getColor(R.color.putih));
         }
 
     }
@@ -75,6 +70,7 @@ public class SliderActivity extends AppCompatActivity {
 
         }
 
+        @SuppressLint("SetTextI18n")
         @Override
         public void onPageSelected(int i) {
             addDotsIndicator(i);
@@ -82,9 +78,22 @@ public class SliderActivity extends AppCompatActivity {
             mCurrentPage = i;
 
 
-            if(i == mDots.length){
-                mNextBtn.setEnabled(false);
-                mNextBtn.setVisibility(View.INVISIBLE);
+            if(i == mDots.length - 1){
+                mNextBtn.setText("Mulai");
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        startActivity(new Intent(SliderActivity.this, MasukActivity.class));
+                    }
+                });
+            } else {
+                mNextBtn.setText("Selanjutnya");
+                mNextBtn.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View view){
+                        mSlideViewPager.setCurrentItem(mCurrentPage + 1);
+                    }
+                });
             }
 
         }

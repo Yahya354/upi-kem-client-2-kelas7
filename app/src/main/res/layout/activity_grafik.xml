@@ -59,13 +59,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/background"
         android:padding="10dp"
         android:layout_marginTop="70dp">
 
-        <com.jjoe64.graphview.GraphView
+        <com.github.mikephil.charting.charts.CombinedChart
             android:id="@+id/grafik"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 
