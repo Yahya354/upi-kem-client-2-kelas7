@@ -49,6 +49,7 @@ public class SliderActivity extends AppCompatActivity {
 
     public void addDotsIndicator(int position){
         mDots = new TextView[5];
+        mDotLayout.removeAllViews();
 
         for(int i = 0; i<mDots.length; i++){
             mDots[i] = new TextView(this);
