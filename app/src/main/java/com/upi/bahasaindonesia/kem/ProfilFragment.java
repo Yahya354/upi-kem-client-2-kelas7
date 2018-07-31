@@ -75,6 +75,21 @@ public class ProfilFragment extends Fragment {
                             .show();
                 }
             });
+        } else {
+            restart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    new AlertDialog.Builder(Objects.requireNonNull(getContext()))
+                            .setMessage("Kamu tidak bisa mereset pencapaianmu karena belum menyelesaikan semua bacaan.")
+                            .setPositiveButton("Oke, saya paham", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                }
+                            })
+                            .setCancelable(false)
+                            .show();
+                }
+            });
         }
 
         ganti_password = v.findViewById(R.id.ganti_password);

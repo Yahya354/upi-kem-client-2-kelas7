@@ -162,7 +162,7 @@ public class GrafikActivity extends AppCompatActivity {
             ArrayList<Entry> entries1 = new ArrayList<>();
 
             for (int i = 0; i < 12; i++) {
-                entries1.add(new BarEntry(i, 100));
+                entries1.add(new BarEntry(i, 140));
             }
 
             final ArrayList<String> labels = new ArrayList<>();
