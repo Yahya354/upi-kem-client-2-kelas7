@@ -190,7 +190,7 @@ public class BacaanActivity extends AppCompatActivity {
             super.onPostExecute(success);
 
             status = 1;
-            Collections.shuffle(allQuestion);
+            /*Collections.shuffle(allQuestion);*/
             kuis.setNomor(allQuestion);
 
             LinearLayout loadingBacaan = findViewById(R.id.loading_bacaan);
