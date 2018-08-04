@@ -49,7 +49,7 @@ public class SoalLatihanActivity extends AppCompatActivity {
     String[] pilihan;
     String[] jawaban;
     Integer[] kode;
-    int benar = 0;
+    private int benar = 0;
 
 
     @Override
@@ -128,7 +128,7 @@ public class SoalLatihanActivity extends AppCompatActivity {
                 kunjaw = pilihan[i];
             }
         }
-        Collections.shuffle(allChoice);
+        /*Collections.shuffle(allChoice);*/
 
         rb1.setText(allChoice.get(0));
         rb2.setText(allChoice.get(1));

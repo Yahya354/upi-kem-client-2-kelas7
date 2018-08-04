@@ -26,16 +26,16 @@ public class SliderAdapter extends PagerAdapter {
 
     //daftar gambar
     public int[] slide_image = {
-            R.drawable.slider_1,
-            R.drawable.slider_2,
-            R.drawable.slider_3,
-            R.drawable.slider_4,
-            R.drawable.slider_5
+            R.drawable.s1,
+            R.drawable.s2,
+            R.drawable.s3,
+            R.drawable.s4,
+            R.drawable.s5,
 
     };
 
     //daftar header
-    public String[] slide_heading = {
+    public String[] slide_titles = {
             "Kemampuan Efektif Membaca\nKelas 7 SMP\n",
             "Latihan",
             "Teks",
@@ -67,6 +67,7 @@ public class SliderAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position){
         layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        assert layoutInflater != null;
         View view = layoutInflater.inflate(R.layout.slide_layout, container, false
         );
 
@@ -75,7 +76,7 @@ public class SliderAdapter extends PagerAdapter {
         TextView slideDesc = (TextView) view.findViewById(R.id.slide_desc);
 
         slideImage.setImageResource(slide_image[position]);
-        slideHeading.setText(slide_heading[position]);
+        slideHeading.setText(slide_titles[position]);
         slideDesc.setText(slide_descs[position]);
 
         container.addView(view);

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context="com.upi.bahasaindonesia.kem.TentangKamiActivity">
+    tools:context=".TentangKamiActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:background="@drawable/tombol_biru4"
+                android:background="@drawable/tombol_blue"
                 android:padding="10dp"
                 android:layout_margin="10dp">
 
@@ -33,7 +33,7 @@
                     android:id="@+id/tombol_keluar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ikon_keluar_biru"
+                    android:src="@drawable/ikon_keluar_blue"
                     android:background="@color/transparan"
                     android:contentDescription="@string/menu" />
 
