@@ -18,10 +18,7 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:orientation="horizontal"
-<<<<<<< HEAD
-=======
             android:background="@drawable/tombol_blue"
->>>>>>> 90e2acabf6e80d7fb6ceabd15093b2f422712ad2
             android:padding="10dp"
             android:layout_margin="10dp">
 
@@ -29,11 +26,7 @@
                 android:id="@+id/tombol_keluar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-<<<<<<< HEAD
-                android:src="@drawable/ikon_keluar_putih"
-=======
                 android:src="@drawable/ikon_keluar_blue"
->>>>>>> 90e2acabf6e80d7fb6ceabd15093b2f422712ad2
                 android:background="@color/transparan"
                 android:contentDescription="@string/menu" />
 
